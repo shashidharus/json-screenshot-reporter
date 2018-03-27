@@ -1,5 +1,5 @@
 {
-  "name": "json-screenshot-reporter",
+  "name": "wdio-json-screenshot-reporter",
   "version": "0.1.0",
   "description": "A WebdriverIO plugin. Reports results in 'json' format.",
   "main": "lib/reporter.js",
