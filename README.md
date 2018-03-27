@@ -29,7 +29,7 @@ Following code shows the default wdio test runner configuration.
 
 ```
 // wdio.conf.js
-var simpleReporter = require('wdio-json-screeshot-reporter').SimpleReporter
+var simpleReporter = require('wdio-json-screenshot-reporter').SimpleReporter
 ...
 module.exports = {
   // ...
