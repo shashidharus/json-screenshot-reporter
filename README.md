@@ -1,16 +1,16 @@
-# WDIO SIMPLE Reporter
+# JSON screenshot Reporter
 > A WebdriverIO plugin. Report results in json format.
 
-This project is inspired by the [wdio-json-reporter](https://github.com/fijijavis/wdio-json-reporter).
+This project is inspired by the [wdio-simple-reporter](https://github.com/andriilazebnyi/wdio-simple-reporter).
 
 ## Installation
 
-The easiest way is to keep `wdio-simple-reporter` as a devDependency in your `package.json`.
+The easiest way is to keep `json-screenshot-reporter` as a devDependency in your `package.json`.
 
 ```
 {
   "devDependencies": {
-    "wdio-simple-reporter": "~0.1.2"
+    "json-screenshot-reporter": "~0.1.0"
   }
 }
 ```
@@ -18,7 +18,7 @@ The easiest way is to keep `wdio-simple-reporter` as a devDependency in your `pa
 You can simple do it by:
 
 ```
-npm install wdio-simple-reporter --save
+npm install json-screenshot-reporter --save
 ```
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
@@ -29,7 +29,7 @@ Following code shows the default wdio test runner configuration.
 
 ```
 // wdio.conf.js
-var simpleReporter = require('wdio-simple-reporter').SimpleReporter
+var simpleReporter = require('json-screeshot-reporter').SimpleReporter
 ...
 module.exports = {
   // ...
@@ -62,16 +62,6 @@ npm build
 [
     {
         "cid": "0-0",
-        "capabilities": {
-            "maxInstances": 1,
-            "browserName": "chrome",
-            "chromeOptions": {
-                "args": [
-                    "--disable-notifications",
-                    "--enable-automation"
-                ]
-            }
-        },
         "runnerTestsNumber": {
             "failing": 1,
             "passing": 1,
@@ -97,7 +87,6 @@ npm build
                         "title": "Test #1: success",
                         "state": "pass",
                         "screenshots": [],
-                        "output": [...],
                         "end": "2017-03-23T11:51:54.990Z"
                     },
                     "Test #2: failes8": {
@@ -108,7 +97,6 @@ npm build
                         "title": "Test #2: failes",
                         "state": "fail",
                         "screenshots": [],
-                        "output": [...],
                         "error": {
                             "message": "element (#id1) still not visible after 3000ms",
                             "stack": "Error: element (#id1) still not visible after 3000ms\n    at Context.<anonymous> (src/test/test.js:18:17)\n    at new Promise (node_modules/core-js/library/modules/es6.promise.js:191:7)\n    at elements(\"#id1\") - isVisible.js:54:17\n    at isVisible(\"#id1\") - waitForVisible.js:37:22",
@@ -139,7 +127,6 @@ npm build
                         "title": "Test #3: skipped",
                         "state": "pending",
                         "screenshots": [],
-                        "output": [],
                         "end": "2017-03-23T11:52:02.023Z"
                     }
                 },
