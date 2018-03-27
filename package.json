@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andriilazebnyi/wdio-simple-reporter.git"
+    "url": "git+https://github.com/shashidharus/json-screenshot-reporter.git"
   },
   "directories": {
     "lib": "./lib"
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/andriilazebnyi/wdio-simple-reporter/issues"
   },
-  "homepage": "https://github.com/andriilazebnyi/wdio-simple-reporter#readme",
+  "homepage": "https://github.com/shashidharus/json-screenshot-reporter#readme",
   "devDependencies": {
     "@types/mkdirp": "^0.3.29",
     "@types/node": "^7.0.11",
@@ -37,6 +37,7 @@
     "mkdirp": "^0.5.1"
   },
   "contributors": [
-    "Andrii Lazebnyi <lazebniy.a@gmail.com>"
+    "Andrii Lazebnyi <lazebniy.a@gmail.com>",
+    "Shashi Sharma <shashidhus@gmail.com>"
   ]
 }
