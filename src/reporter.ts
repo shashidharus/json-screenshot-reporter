@@ -143,7 +143,7 @@ type RunnerStats = {
  * @api public
  */
 export class SimpleReporter extends events.EventEmitter {
-    public static reporterName = 'wdio-simple-reporter' // default reporter name
+    public static reporterName = 'wdio-json-screenshot-reporter' // default reporter name
 
     private resultsDir = '../reports' // default results dir
     private resultsFile = 'report.json' // default results file
