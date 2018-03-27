@@ -5,12 +5,12 @@ This project is inspired by the [wdio-simple-reporter](https://github.com/andrii
 
 ## Installation
 
-The easiest way is to keep `json-screenshot-reporter` as a devDependency in your `package.json`.
+The easiest way is to keep `wdio-json-screenshot-reporter` as a devDependency in your `package.json`.
 
 ```
 {
   "devDependencies": {
-    "json-screenshot-reporter": "~0.1.0"
+    "wdio-json-screenshot-reporter": "~0.1.0"
   }
 }
 ```
@@ -18,7 +18,7 @@ The easiest way is to keep `json-screenshot-reporter` as a devDependency in your
 You can simple do it by:
 
 ```
-npm install json-screenshot-reporter --save
+npm install wdio-json-screenshot-reporter --save
 ```
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
@@ -29,7 +29,7 @@ Following code shows the default wdio test runner configuration.
 
 ```
 // wdio.conf.js
-var simpleReporter = require('json-screeshot-reporter').SimpleReporter
+var simpleReporter = require('wdio-json-screeshot-reporter').SimpleReporter
 ...
 module.exports = {
   // ...
